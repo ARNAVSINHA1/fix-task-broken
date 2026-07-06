@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "task": {
+        "name": "log-report",
+        "type": "local",
+        "digest": "sha256:aec395491bd81861e9d3d715089ea0b02d933c3387706caa5af20e9f34d17456",
+        "source": "fix-task-broken",
+        "path": "log-report"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "nop",
+        "skills": [],
+        "extra_allowed_hosts": [],
+        "kwargs": {},
+        "mcp_servers": []
+    },
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false
+    }
+}

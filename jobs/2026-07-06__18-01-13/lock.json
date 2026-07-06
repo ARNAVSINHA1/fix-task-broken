@@ -1,0 +1,58 @@
+{
+    "schema_version": 2,
+    "created_at": "2026-07-06T12:31:14.648080Z",
+    "harbor": {
+        "version": "0.17.1",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 4,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "AgentTimeoutError",
+            "RewardFileNotFoundError",
+            "VerifierTimeoutError",
+            "ApiUsageLimitError",
+            "VerifierOutputParseError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 1,
+            "task": {
+                "name": "log-report",
+                "type": "local",
+                "digest": "sha256:6b494a2f83b479dc732f00249c6ca0959ea702a675ae1116325d9b76ea63ea48",
+                "source": "fix-task-broken",
+                "path": "log-report"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "oracle",
+                "skills": [],
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false
+            }
+        }
+    ]
+}

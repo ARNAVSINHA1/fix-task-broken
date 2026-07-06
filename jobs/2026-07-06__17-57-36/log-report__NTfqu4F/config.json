@@ -1,0 +1,9 @@
+{
+    "task": {
+        "path": "log-report",
+        "source": "fix-task-broken"
+    },
+    "trial_name": "log-report__NTfqu4F",
+    "trials_dir": "jobs\\2026-07-06__17-57-36",
+    "job_id": "45b95b0c-53f0-488f-afbf-c35ef55e835b"
+}
