@@ -18,7 +18,7 @@ Analyze the log and generate a JSON report.
 /app/report.json
 ```
 
-3. The JSON object must contain exactly the following fields:
+3. The JSON object must contain exactly the following fields and no others:
 
 ```json
 {

@@ -1,3 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
 mkdir -p /logs/verifier
 
 pytest /tests/test_outputs.py \

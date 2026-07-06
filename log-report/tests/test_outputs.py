@@ -20,9 +20,10 @@ def test_report_schema():
     """Success Criterion 2: report.json must contain the required fields."""
     report = load_report()
 
-    assert "total_requests" in report
-    assert "unique_ips" in report
-    assert "top_path" in report
+    assert set(report.keys()) == {"total_requests", "unique_ips", "top_path"}
+    assert isinstance(report["total_requests"], int)
+    assert isinstance(report["unique_ips"], int)
+    assert isinstance(report["top_path"], str)
 
 
 def test_report_values():
