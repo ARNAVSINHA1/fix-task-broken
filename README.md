@@ -1,4 +1,4 @@
-# Log Report Task
+# Dynamo - Fix the Broken Terminal-Bench Task
 
 This repository contains a fixed version of the Dynamo task for generating a JSON summary from an Apache-style access log.
 
